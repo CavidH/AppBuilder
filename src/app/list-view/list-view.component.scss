@@ -47,6 +47,16 @@
   flex-grow: 1;
   flex-basis: 0;
 }
+.card {
+  width: 320px;
+  height: max-content;
+  min-width: 320px;
+  max-width: 320px;
+  flex-shrink: 0;
+}
+.accordion {
+  overflow-y: auto;
+}
 .group_3 {
   background-color: #19AD87;
   justify-content: flex-start;
@@ -111,6 +121,10 @@
   height: max-content;
   min-width: min-content;
 }
+.text {
+  height: max-content;
+  min-width: min-content;
+}
 .avatar {
   --igx-avatar-background: rgba(0, 0, 0, 0.1);
 }
@@ -146,10 +160,17 @@
 .avatar_5::part(base) {
   --igx-avatar-color: var(--ig-surface-500);
 }
-.list {
-  margin: 0 16px 16px;
+.body-content {
+  min-width: 50px;
+  min-height: 50px;
+}
+.actions-content {
+  min-width: 50px;
+  min-height: 40px;
+}
+.button {
+  --ig-size: var(--ig-size-medium);
   height: max-content;
-  min-width: min-content;
 }
 .input {
   margin: 0 0 16px;
@@ -169,12 +190,12 @@
   flex-grow: 1;
   flex-basis: 0;
 }
-.button {
+.button_1 {
   --ig-size: var(--ig-size-medium);
   margin: 0 16px 16px 0;
   height: max-content;
 }
-.button_1 {
+.button_2 {
   --igx-button-foreground: var(--ig-surface-500);
   --igx-button-background: var(--ig-secondary-500);
   right: 24px;
@@ -182,4 +203,9 @@
   position: absolute;
   width: max-content;
   height: max-content;
+}
+.list {
+  margin: 0 16px 16px;
+  height: max-content;
+  min-width: min-content;
 }
