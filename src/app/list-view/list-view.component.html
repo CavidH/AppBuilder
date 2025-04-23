@@ -7,6 +7,74 @@
       <h6 class="h6">
         To do
       </h6>
+      <igx-card class="card">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Title goes here...
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Subtitle goes here...
+          </h5>
+        </igx-card-header>
+        <igx-card-content class="body-content">
+          <igx-accordion class="accordion">
+            <igx-expansion-panel>
+              <igx-expansion-panel-body>
+                <p class="ig-typography__body-2 text">
+                  Body 2
+                </p>
+              </igx-expansion-panel-body>
+              <igx-expansion-panel-header>
+                <igx-expansion-panel-title>Title goes here...</igx-expansion-panel-title>
+              </igx-expansion-panel-header>
+            </igx-expansion-panel>
+            <igx-expansion-panel>
+              <igx-expansion-panel-body>
+                <p class="ig-typography__body-2 text">
+                  Body 2
+                </p>
+              </igx-expansion-panel-body>
+              <igx-expansion-panel-header>
+                <igx-expansion-panel-title>Title goes here...</igx-expansion-panel-title>
+              </igx-expansion-panel-header>
+            </igx-expansion-panel>
+            <igx-expansion-panel>
+              <igx-expansion-panel-body>
+                <p class="ig-typography__body-2 text">
+                  Body 2
+                </p>
+              </igx-expansion-panel-body>
+              <igx-expansion-panel-header>
+                <igx-expansion-panel-title>Title goes here...</igx-expansion-panel-title>
+              </igx-expansion-panel-header>
+            </igx-expansion-panel>
+          </igx-accordion>
+        </igx-card-content>
+        <igx-card-actions class="actions-content">
+          <ng-container igxStart>
+            <button igxButton="flat" type="button" igxRipple class="button">
+              Button
+            </button>
+          </ng-container>
+          <ng-container igxEnd>
+            <button igxRipple igxIconButton="flat">
+              <igx-icon>
+                favorite
+              </igx-icon>
+            </button>
+            <button igxRipple igxIconButton="flat">
+              <igx-icon>
+                bookmark
+              </igx-icon>
+            </button>
+            <button igxRipple igxIconButton="flat">
+              <igx-icon>
+                share
+              </igx-icon>
+            </button>
+          </ng-container>
+        </igx-card-actions>
+      </igx-card>
     </div>
     <igx-avatar initials="3" shape="circle" class="avatar avatar_2"></igx-avatar>
   </div>
@@ -274,12 +342,12 @@
     </div>
   </ng-container>
   <igx-dialog-actions>
-    <button igxButton="contained" type="button" igxRipple (click)="newTaskDialog.toggle()" class="button">
+    <button igxButton="contained" type="button" igxRipple (click)="newTaskDialog.toggle()" class="button_1">
       Create Task
     </button>
   </igx-dialog-actions>
 </igx-dialog>
-<button igxButton="fab" igxRipple (click)="newTaskDialog.toggle()" class="button_1">
+<button igxButton="fab" igxRipple (click)="newTaskDialog.toggle()" class="button_2">
   <igx-icon class="icon_3">
     add
   </igx-icon>
